@@ -1,12 +1,30 @@
 body {
-    background-color: rgb(26, 26, 26);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    background-image: url('https://images.unsplash.com/photo-1580234811497-9df7fd2f357e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzgyMTQwOQ&ixlib=rb-1.2.1&q=85');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 110vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    background-attachment: fixed;
+    place-items: center;
+}
+
+.container {
+    padding: 20px 70px;
+    background-color: rgba(229, 156, 245, 0.4);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
 }
 
 .title {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.742);
 }
 
 .move-icon {
@@ -14,8 +32,8 @@ body {
 }
 
 .move-button {
-    background-color: transparent;
-    border: 3px solid white;
+    background-color: rgba(128, 0, 128, 0.371);
+    border: 3px solid rgba(255, 255, 255, 0.418);
     width: 120px;
     height: 120px;
     border-radius: 60px;
@@ -23,26 +41,42 @@ body {
     cursor: pointer;
 }
 
+.scores {
+    color: black;
+}
+
 .result {
     font-size: 25px;
     font-weight: bold;
     margin-top: 50px;
+    text-align: center;
+}
+
+.moves {
+    text-align: center;
 }
 
 .score {
     margin-top: 60px;
+    text-align: center;
 }
 
 .reset-score-button, 
 .auto-play-button,
 .reset-confirm-button {
-    background-color: white;
+    background-color: rgba(171, 28, 238, 0.921);
     border: none;
+    color: rgb(186, 186, 186);
     font-size: 15px;
-    padding: 8px 15px;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .reset-confirm-button {
     margin-left: 10px;
+}
+
+.confirmation {
+    color: black;
 }

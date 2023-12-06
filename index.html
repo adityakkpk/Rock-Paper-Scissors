@@ -7,30 +7,38 @@
 </head>
 
 <body>
-    <p class="title">Rock Paper Scissors</p>
-    <button class="move-button js-rock-button">
-        <img src="Images/rock-emoji.png" class="move-icon" alt="">
-    </button>
+    <div class="container">
+        <p class="title">Rock Paper Scissors</p>
+        <div class="move-button-container">
+            <button class="move-button js-rock-button">
+                <img src="Images/rock-emoji.png" class="move-icon" alt="">
+            </button>
 
-    <button class="move-button js-paper-button">
-        <img src="Images/paper-emoji.png" class="move-icon" alt="">
-    </button>
+            <button class="move-button js-paper-button">
+                <img src="Images/paper-emoji.png" class="move-icon" alt="">
+            </button>
 
-    <button class="move-button js-scissors-button">
-        <img src="Images/scissors-emoji.png" class="move-icon" alt="">
-    </button>
+            <button class="move-button js-scissors-button">
+                <img src="Images/scissors-emoji.png" class="move-icon" alt="">
+            </button>
+        </div>
 
-    <p class="js-result result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score score"></p>
+        <div class="scores">
+            <p class="js-result result"></p>
+            <p class="js-moves moves"></p>
+            <p class="js-score score"></p>
+        </div>
 
-    <button class="reset-score-button js-reset-score-button">Reset Score</button>
+        <div class="game-btn">
+            <button class="reset-score-button js-reset-score-button">Reset Score</button>
 
-    <button class="auto-play-button js-auto-play-button">Auto Play</button>
-    
-    <p class="js-reset-confirmation"></p>
+            <button class="auto-play-button js-auto-play-button">Auto Play</button>
+        </div>
 
-    <script src="Scripts/rock-paper-scissors.js"></script>
+        <p class="js-reset-confirmation confirmation"></p>
+
+        <script src="Scripts/rock-paper-scissors.js"></script>
+    </div>
 </body>
 
 </html>
