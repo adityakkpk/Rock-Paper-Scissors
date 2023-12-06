@@ -24,7 +24,6 @@ body {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color: rgb(0, 0, 0);
 }
 
 .move-icon {
@@ -41,27 +40,21 @@ body {
     cursor: pointer;
 }
 
-.scores {
-    color: white;
-}
 
 .result {
     font-size: 25px;
     font-weight: bold;
     margin-top: 50px;
     text-align: center;
-    color: black;
 }
 
 .moves {
     text-align: center;
-    color: black;
 }
 
 .score {
     margin-top: 60px;
     text-align: center;
-    color: black;
 }
 
 .reset-score-button, 
