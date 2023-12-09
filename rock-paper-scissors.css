@@ -1,20 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-image: url('https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('Images/bckground.png');
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 110vh;
     padding: 0;
     margin: 0;
     display: grid;
+    background-attachment: fixed;
     place-items: center;
 }
 
 .container {
-    padding: 20px 70px;
-    background-color: rgba(229, 156, 245, 0.4);
+    padding: 20px 50px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid #aeaeae;
     border-radius: 10px;
     display: grid;
     place-items: center;
@@ -24,6 +25,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    color: #000000;
 }
 
 .move-icon {
@@ -31,40 +33,48 @@ body {
 }
 
 .move-button {
-    background-color: rgba(128, 0, 128, 0.371);
-    border: 3px solid rgba(255, 255, 255, 0.418);
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+    background-color: #f9ffd8;
+    border: 1px solid #6a994e;
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-
 .result {
     font-size: 25px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .moves {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.moves img {
+    height: 40px;
 }
 
 .score {
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
+    color: #000000;
 }
 
 .reset-score-button, 
 .auto-play-button,
 .reset-confirm-button {
-    background-color: rgba(171, 28, 238, 0.921);
+    background-color: #00171f;
     border: none;
-    color: rgb(255, 255, 255);
+    color: #dcdcdc;
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 8px 15px;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -74,5 +84,5 @@ body {
 }
 
 .confirmation {
-    color: black;
+    color: #3200fc;
 }
